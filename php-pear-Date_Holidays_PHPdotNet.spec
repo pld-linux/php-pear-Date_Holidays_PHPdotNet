@@ -6,12 +6,12 @@
 Summary:	%{_pearname} - Driver based class to calculate birthdays of some members of the PHP.net community
 Summary(pl.UTF-8):	%{_pearname} - klasa do obliczania dni urodzin niektórych członków społeczności PHP.net
 Name:		php-pear-%{_pearname}
-Version:	0.1.0
+Version:	0.1.1
 Release:	1
 License:	PHP License
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	2f459a7874612e4f4737874d64aaddf8
+# Source0-md5:	ea3b9cb6d189253b69a10062ba15cc38
 URL:		http://pear.php.net/package/Date_Holidays_PHPdotNet/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
