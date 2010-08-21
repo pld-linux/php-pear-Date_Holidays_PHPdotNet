@@ -1,19 +1,17 @@
 %include	/usr/lib/rpm/macros.php
-%define		_class		Date
-%define		_subclass	Holidays_PHPdotNet
 %define		_status		alpha
 %define		_pearname	Date_Holidays_PHPdotNet
 Summary:	%{_pearname} - Driver based class to calculate birthdays of some members of the PHP.net community
 Summary(pl.UTF-8):	%{_pearname} - klasa do obliczania dni urodzin niektórych członków społeczności PHP.net
 Name:		php-pear-%{_pearname}
 Version:	0.1.2
-Release:	1
+Release:	2
 License:	PHP License
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	999f04449b8ca1a618fd6e4acdd1044e
 URL:		http://pear.php.net/package/Date_Holidays_PHPdotNet/
-BuildRequires:	php-pear-PEAR
+BuildRequires:	php-pear-PEAR >= 1:1.4.0-0.b1
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-pear
 Requires:	php-pear-Date_Holidays >= 0.18.0
@@ -38,9 +36,9 @@ Ta klasa ma w PEAR status: %{_status}.
 Summary:	Tests for PEAR::%{_pearname}
 Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
-AutoReq:	no
 Requires:	%{name} = %{version}-%{release}
 AutoProv:	no
+AutoReq:	no
 
 %description tests
 Tests for PEAR::%{_pearname}.
