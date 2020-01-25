@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.php
 %define		_status		alpha
 %define		_pearname	Date_Holidays_PHPdotNet
 Summary:	%{_pearname} - Driver based class to calculate birthdays of some members of the PHP.net community
